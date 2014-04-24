@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+<style media="screen" type="text/css">
+
+h1{
+	font-family: 'Lato', 'sans-serif';
+	font-size:60px;
+}
+
+</style>
+<script type="text/javascript" src="moveobj.js"> </script>
+<script type="text/javascript">
+
+/***********************************************
+* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+* Modified by Dynamic Drive for various improvements
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+ flyimage1=new Chip("flyimage1",47,68);
+ flyimage2=new Chip("flyimage2",47,68);
+ flyimage3=new Chip("flyimage3",47,68);
+
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+
+}
+
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+
+</script>
+<title>Cool Guy - Tom Nguyen</title>
+</head>
+<body>
+<div style="margin-top:10%">
+<center><img src="./splash.jpg"><br>
+<h1>Hi, I'm Tom.</h1>
+</center></div>
+
+<DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:80; height:107;">
+<A HREF="https://isitchristmas.com/"><IMG SRC="./tom.gif" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage2" STYLE="position:absolute; left: -300px; width:80; height:107;">
+<A HREF="https://www.facebook.com/tomnguyenn"><IMG SRC="./tom2.gif" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage3" STYLE="position:absolute; left: -100px; width:80; height:107;">
+<A HREF="https://isitchristmas.com/"><IMG SRC="./tom3.gif" BORDER=0></a>
+</DIV>
+
+</body>
+</html>
